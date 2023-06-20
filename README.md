@@ -64,6 +64,30 @@ add_library(QSort
 ```CMake
 target_include_directories(QSort  PUBLIC ../../Headers/Quick_Sort )
 ```
+
 ## 生成Unit Test的執行檔
 
+>生成執行檔的CMakeLists.txt
+**檔名叫Test.exe**
+```CMake
+add_executable(Test
 
+    ./Main.c
+    ./Sources/Test_QuickSort.c
+
+)
+
+target_include_directories(Test PUBLIC ./Headers)
+```
+
+>加入Library
+**用到剛剛的取名 QSort 的Library**
+**cmocka 是單元測試的Library**
+```CMake
+target_link_libraries(Test
+
+    QuickSortMain
+    cmocka
+    QSort
+)
+```
