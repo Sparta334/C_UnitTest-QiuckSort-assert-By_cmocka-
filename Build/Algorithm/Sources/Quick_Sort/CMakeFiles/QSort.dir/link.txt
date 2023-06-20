@@ -1,0 +1,2 @@
+/mingw64/bin/ar.exe qc libQSort.a CMakeFiles/QSort.dir/Quick_Sort.c.obj
+/mingw64/bin/ranlib.exe libQSort.a
