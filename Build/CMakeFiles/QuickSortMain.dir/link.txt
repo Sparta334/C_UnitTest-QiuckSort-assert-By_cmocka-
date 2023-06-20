@@ -1,2 +1,0 @@
-/mingw64/bin/ar.exe qc libQuickSortMain.a CMakeFiles/QuickSortMain.dir/Algorithm/Sources/Quick_Sort/Quick_Sort.c.obj
-/mingw64/bin/ranlib.exe libQuickSortMain.a
